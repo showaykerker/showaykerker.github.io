@@ -2,7 +2,7 @@
 - layout: top-middle
   title: Building deep reinforcement learning agents using stable-baselines
   title2: 利用 stable-baselines 迅速建立強化學習 Agent
-  link: https://tinyurl.com/y7tajwws
+  read_more: https://tinyurl.com/y7tajwws
   dates: Feb 17, 2020
   quote: >
    前一篇「在自己的環境使用 OpenAI 的高品質強化學習 Agent」寫了如何將自己的環境 gym 化，並且用 baselines 來做強化學習，這次分享一下如何利用OpenAI/Baselines的一個 Fork : hill-a/stable-baselines來迅速的建立強化學習 Agent 並做適當的 Tuning 。
@@ -12,7 +12,7 @@
 - layout: top-middle
   title: Using OpenAI Gym in your customed environment. 
   title2: 在自己的環境使用 OpenAI 的高品質強化學習 Agent
-  link: https://tinyurl.com/yc6wf5wn
+  read_more: https://tinyurl.com/yc6wf5wn
   dates: May 6, 2019 
   quote: >
    這篇大概整理一下強化學習中會用到的兩個強大的套件 OpenAI Gym 和 OpenAI Baselines，前者是一個有很多不同環境的套件，後者則是由 OpenAI 的巨巨們 Implement 的高品質 Deep Reinforcement Learning Agent。Baselines 的原生設計就是可以在 Gym 的環境中做深度強化學習，那我們能不能使用這些已經有人幫我們寫好的 Agent 呢？答案是可以的，只要我們先照著 Gym 的格式走，設定基本該有的東西後，就可以把環境丟給 Baselines 了，連 Agent 都不用自己寫呢。

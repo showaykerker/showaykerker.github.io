@@ -8,3 +8,27 @@
 #    Short description of the company (optional)
 #   description: | # this will include new lines to allow paragraphs
 #     Description of role
+
+- layout: left
+  company: University Social Responsibility
+  link: https://12u10.nctu.edu.tw/
+  jobs:
+    - title: Lecturer
+    - title: Teaching Assistant
+  quote: >
+   Short description of the company (optional)
+  description: | # this will include new lines to allow paragraphs
+    Description of role
+
+- layout: right
+  company: AaPaTo Honor Society
+  link: 
+  job_title: Lecturer
+  dates: January 2016 - January 2019
+  quote: >
+    Established by MediaTek and National Chiao Tung University, 
+    the purpose of the organization was to increase the interest and understanding in the field of science and technology to young students.
+  description: | # this will include new lines to allow paragraphs
+    Our goal was to perform technology education to those talented high school students that were interested in related fields.
+    As a lecturer, I designed courses of two-wheeled robots that summarized knowledge of control system, algorithm and MCU coding.
+    
