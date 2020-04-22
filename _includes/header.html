@@ -1,126 +1,38 @@
-<div class="container header-contianer">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
-      <h1>{{ site.name | escape }}</h1>
-      <h2>{{ site.title | escape }}</h2>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
-      <ul class="icons no-print">
-        {%- if site.dribbble_username -%}
-          <li>
-            <a target="_blank" href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-dribbble-square" title="Dribble link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.facebook_username -%}
-          <li>
-            <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-facebook" title="Facebook link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.flickr_username -%}
-          <li>
-            <a target="_blank" href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-flickr" title="Flickr link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.github_username -%}
-          <li>
-            <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-github" title="Github link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.stackoverflow_username -%}
-          <li>
-            <a target="_blank" href="https://stackoverflow.com/users/{{ site.stackoverflow_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-stack-overflow" title="Stackoverflow link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.instagram_username -%}
-          <li>
-            <a target="_blank" href="https://www.instagram.com/{{ site.instagram_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-instagram" title="Instagram link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.linkedin_username -%}
-          <li>
-            <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-linkedin" title="Linkedin link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.xing_username -%}
-          <li>
-            <a target="_blank" href="https://www.xing.com/profile/{{ site.xing_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-xing" title="Xing link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.pinterest_username -%}
-          <li>
-            <a target="_blank" href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-pinterest" title="Pintrest link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.twitter_username -%}
-          <li>
-            <a target="_blank" href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-twitter" title="Twitter link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.youtube_username -%}
-          <li>
-            <a target="_blank" href="https://www.youtube.com/{{ site.youtube_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-youtube" title="Youtube link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.googleplus_username -%}
-          <li>
-            <a target="_blank" href="https://plus.google.com/{{ site.googleplus_username| escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-google-plus" title="Google plus link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if site.orcid_username -%}
-          <li>
-            <a target="_blank" href="https://orcid.org/{{ site.orcid_username | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-orcid" title="ORCiD link"></i>
-            </a>
-          </li>
-        {%- endif -%}
-        {% for link in site.additional_links %}
-          <li>
-            {% include a.html href=link.url class="button button--sacnite button--round-l" %}
-              <i class="fab {{ link.icon }}" title="{{ link.title | escape }}"></i>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+<header>
 
-      {%- if site.email -%}
-        <p>
-          Email: <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
-        </p>
-      {%- endif -%}
-      {%- if site.phone -%}
-        <p>
-          Phone: {{ site.phone | escape }}
-        </p>
-      {%- endif -%}
-      {%- if site.website -%}
-        <p>
-          Web: {% include a.html href=site.website %}{{ site.website | escape }}</a>
-        </p>
-      {%- endif -%}
-    </div>
-  </div>
-</div>
+    <div class="col-lg-12">
+
+        <div class="row">
+
+                <nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav">
+                <!-- <a class="navbar-brand" href="#">{{site.title}}</a> -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">{{site.title}}</a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          {% for i in site.urls %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ site.url}}{{site.baseurl}}{{ i.url }}">{{ i.text }}</a>
+                            </li>
+                            {% endfor %}
+
+                        </ul>
+
+
+                    </div>
+                       <ul class="nav justify-content-end">
+                           <li class="nav-item">
+                                    <a class="nav-link" id="search-icon" href="{{ site.url}}{{site.baseurl}}/search/"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                </li>
+                            <li class="nav-item">
+                                        <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() "type="checkbox" name="checkbox" >
+                                </li>
+                             </ul>
+            </nav>
+
+        </div>
+
+     </div>
+</header>

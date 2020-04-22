@@ -2,5 +2,7 @@
 .bundle
 .sass-cache
 _site
-*.code-workspace
+.jekyll-cache
+.jekyll-metadata
 vendor
+build/

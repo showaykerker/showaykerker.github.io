@@ -1,18 +1,6 @@
 {
-  "addons": [
-
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/ruby"
-    }
-  ],
-  "env": {
-  },
-  "formation": {
-  },
-  "name": "modern-resume-theme",
-  "scripts": {
-  },
-  "stack": "heroku-18"
+  "name": "devlopr jekyll blog",
+  "description": "A Jekyll Theme built for Developers",
+  "repository": "https://github.com/sujaykundu777/devlopr-jekyll",
+  "keywords": ["jekyll", "blog"]
 }

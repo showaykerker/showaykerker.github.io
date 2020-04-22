@@ -1,87 +1,177 @@
-# Site
-repository: showaykerker/showaykerker.github.io
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+title: devlopr
+subtitle: A Jekyll Theme Built for Developers
+description: >- # this means to ignore newlines until "baseurl:"
+  devlopr-jekyll is a Jekyll Theme Built For Developers
 
-# Personal info
-name: Hsiu-Wei Hsu
-email: df405102@gmail.com
-website: https://showaykerker.github.io
+url: "https://showaykerker.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
+baseurl: "/" # the subpath of your site, e.g. /blog
 
-darkmode: false
+urls:
+    - text: About Me
+      url: /about
+    - text: Blog
+      url: /blog
+    - text: Gallery
+      url: /gallery
+    - text: Shop
+      url : /shop
+    - text: Contact Me
+      url : /contact
+    - text: Styleguide
+      url: /styleguide
+    - text: Get Started
+      url: /get-started
 
-# Social links
-github_username:  showaykerker
-facebook_username: showaykerker
-linkedin_username: hsiu-wei-hsu-49516271
+# Edit these details
 
+author_logo: profile.png
+author: John Doe
+author_bio: Web Designer and Developer
+author_email: "johndoe@gmail.com"
+author_location: India
+author_website_url: "http://johndoe.com"
 
-# Additional icon links
-# additional_links:
-# - title: Link name
-#   icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
+author_work_experiences:
+            - company_name: Google
+              company_logo: google.png
+              company_url: https://google.com
+              designation: Software Engineer
+              description: Worked on various Google Products
+              visibility: true
+            - company_name: Microsoft
+              company_logo: microsoft.png
+              company_url: https://microsoft.com
+              designation: Azure Developer
+              description: Worked on various Azure Cloud Products
+              visibility: true
 
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+author_education_details:
+              - college_logo: mit.png
+                college_name: MIT
+                college_url: https://mit.org
+                college_degree: CS Engineer
+                description: Bachelor of Technology
+                visibility: true
 
-# About Section
-# about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
-about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+author_project_details:
+              - project_thumbnail: gamershub.png
+                project_title: Gamers Hub
+                project_description: A Platform built for Gamers and Game Devs
+                project_url: https://gamershub.in
+                visibility: true
+              - project_thumbnail: hack4r.PNG
+                project_title: Hack4r
+                project_description: A Platform built for Hackers and Penetration Testers
+                project_url: https://hack4r.com
+                visibility: true
 
-  You can even add paragraphs by using empty lines like this and add anything else markdown supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images
+# social links
+twitter_username: johndoe
+github_username:  johndoe
+facebook_username: johndoe
+linkedin_username: johndoe
+behance_username: johndoe
+instagram_username: johndoe
+medium_username: johndoe
+telegram_username: johndoe
+dribbble_username: johndoe
+flickr_username: johndoe
 
-# Projects Section
-# projects_title: Projects #(Use this to override about projects section title)
+#for comments using disqus
+disqus_shortname: sujay-kundu
 
-# Experience Section
-# experience_title: Experience #(Use this to override about experience section title)
+# wakatime username (coding activity)
+wakatime_username: sujaykundu777
 
-# Education Section
-# education_title: Education #(Use this to override about education section title)
+# mailchimp embedded form url (newsletter):
+mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
+# formspree (contact form)
+formspree_email: johndoe@gmail.com
 
-# More Section
-more_title: When I'm not Programming
-more_content: | # this will include new lines to allow paragraphs
-  This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+# syntax highlighter
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
 
-  Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+# google analytics
+google_analytics: UA-46783401-10
 
-# Footer
-footer_show_references: true
+# Choose what to show ( can be true or false)
+show_author_work_experiences: true
+show_author_education_details: true
+show_author_project_details: true
+
+# algolia search
+algolia:
+  application_id: D9WA1YKTRQ
+  index_name: blog_posts # You can replace that with whatever name you want
+  files_to_exclude: []
+  nodes_to_index: 'article'
+  search_only_api_key: 58ffdd7cd6c45ec1577a7fcd789b1b9a
+
+# pagination of posts
+paginate: 4
+per_page: 4
+paginate_path: "/blog/page/:num/"
+
+# minify
+# compress_html:
+#   clippings: all
+#   comments: ["<!-- ", " -->"]
+#   endings: all
+#   ignore:
+#     envs: ['development']
+
+# Archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#   layout: archive
+#   permalinks:
+#     category: '/category/:name/'
+
+# Shop
+collections:
+ - products
+
+# Gallery
+defaults:
+  -
+    scope:
+      path: "gallery"
+    values:
+      permalink: /:path/:basename:output_ext
 
 # Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
 plugins:
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-algolia
+  - jekyll-menus
 
-exclude : [
-  "Gemfile",
-  "Gemfile.lock",
-  "node_modules",
-  "vendor/bundle/",
-  "vendor/cache/",
-  "vendor/gems/",
-  "vendor/ruby/",
-  "lib/",
-  "scripts/",
-  "docker-compose.yml",
-  ]
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+destination: ./build

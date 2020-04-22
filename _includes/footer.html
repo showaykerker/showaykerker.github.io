@@ -1,9 +1,8 @@
-<div class="container footer-container">
-  <p>
-    {{ site.name | escape }} -
-    <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
-    {%- if site.footer_show_references -%}
-      &nbsp;- References on request
-    {%- endif -%}
-  </p>
-</div>
+
+<footer>
+
+    <p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Hosted at <a href="https://pages.github.com">Github</a>. Subscribe via
+        <a href="{{ " /feed.xml " | prepend: site.baseurl }}">RSS</a>
+    </p>
+
+</footer>
