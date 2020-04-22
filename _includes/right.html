@@ -6,6 +6,8 @@
     {{ include.item.description | strip | markdownify }}
   </div>
   <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+    {%- if include.item.title -%}<h4>{{ include.item.title }}</h4>{%- endif -%}
+    {%- if include.item.title2 -%}<h4>{{ include.item.title2 }}</h4>{%- endif -%}
     {%- if include.item.name -%}<h4>{{ include.item.name }}</h4>{%- endif -%}
     {%- if include.item.company -%}<h4>{{ include.item.company }}</h4>{%- endif -%}
     {%- if include.item.link -%}
@@ -22,6 +24,13 @@
     <p class="no-print">
       <a href="https://github.com/{{ include.item.github }}" target="_blank">
         <i class="fa fa-github" title="{{ include.item.name }} Github link"></i>
+      </a>
+    </p>
+    {%- endif -%}
+    {%- if include.item.youtube -%}
+    <p class="no-print">
+      <a href="https://youtu.be/{{ include.item.github }}" target="_blank">
+        <i class="fa fa-github" title="{{ include.item.name }} Youtube link"></i>
       </a>
     </p>
     {%- endif -%}

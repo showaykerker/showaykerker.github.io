@@ -4,7 +4,6 @@ repository: showaykerker/showaykerker.github.io
 
 # Personal info
 name: Hsiu-Wei Hsu
-title: Your job title
 email: df405102@gmail.com
 website: https://showaykerker.github.io
 
@@ -13,14 +12,14 @@ darkmode: false
 # Social links
 github_username:  showaykerker
 facebook_username: showaykerker
-linkedin_username: Hsiu Wei Hsu
+linkedin_username: hsiu-wei-hsu-49516271
 
 
 # Additional icon links
-additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
+# additional_links:
+# - title: Link name
+#   icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
 # - title: another link
 #   icon: font awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -51,6 +50,7 @@ about_content: | # this will include new lines to allow paragraphs
 
 # Education Section
 # education_title: Education #(Use this to override about education section title)
+
 
 # More Section
 # more_title: A Little More About Me #(Use this to override about more section title)

@@ -1,9 +1,17 @@
 # Project template
 - layout: top-middle
-  name: Project name
-  link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-  github: Github page for project (eg. sproogen/modern-resume-theme)(optional)
+  name: lan-NCTU
+  youtube: https://youtu.be/T7qD4VoRuG8
+  github: showaykerker/lan_nctu
   quote: >
-    Short overview of the project (optional)
+    A modern midi instruments with rgb programmable lights patterns and 9DOF imu sensor.
   description: | # this will include new lines to allow paragraphs
-    Description about the work on/with the project
+    
+
+- layout: top-middle
+  name: Linkit7697 DoorMonitor
+  github: showaykerker/Linkit7697_DoorMonitor
+  quote: >
+    Home security project constructed by linkit 7697, raspberry pi and IFTTT service.
+  description: | # this will include new lines to allow paragraphs
+    
